@@ -15,7 +15,7 @@ function Login() {
 
         try {
 
-            await axios.post("http://localhost:3001/auth/register", {
+            await axios.post("https://nayepankh-react.vercel.app/auth/register", {
                 email, password
             })
                    
