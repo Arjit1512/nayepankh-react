@@ -14,7 +14,7 @@ app.use(cors(
   {
     origin:["https://nayepankh-react-7msj-r5h96qmvf-arjits-projects-48c7f67d.vercel.app"],
     methods:["POST","GET"],
-    credentials:true
+    optionsSuccessStatus: 200
   }    
 ));
 app.use(express.json());
