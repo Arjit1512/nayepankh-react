@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import mongoose from "mongoose";
-// import cors from "cors";
+import cors from "cors";
 import dotenv from "dotenv";
 import authRoutes from "./routes/auth.js";;
 import { register } from "./controllers/auth.js";
@@ -10,12 +10,11 @@ import User from "./models/User.js";
 /* CONFIGURATIONS */
 dotenv.config();
 const app = express();
-// app.use(cors({
-//   origin: "https://nayepankh-react-7msj-r5h96qmvf-arjits-projects-48c7f67d.vercel.app",
-//   methods: ["POST", "GET"],
-//   optionsSuccessStatus: 200,
-//   credentials: true, // You can add this if you need to pass cookies in the request
-// }));
+app.use(cors({
+  origin: "https://nayepankh-react-7msj-r5h96qmvf-arjits-projects-48c7f67d.vercel.app",
+  methods: ["POST", "GET"],
+  credentials: true
+}));
 app.use(express.json());
 
 // app.use((req, res, next) => {
