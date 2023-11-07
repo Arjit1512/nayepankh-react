@@ -668,6 +668,10 @@ img.team-img{
   .donate2.left{
     background-color: white;
   }
+  .ceo1 h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
 }
 html,body{
   width:100%;
