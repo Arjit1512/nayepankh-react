@@ -306,16 +306,15 @@ width:fit-content;
 
 #testimonials .carousel-item img{
   width: 20%;
-  height: 20%;
+  height: 10%;
   border-radius: 70%;
   margin-left: 20%;
   margin-top: 5%;
+
 }
 #testimonials .carousel-item p{
-  margin-left: 45%;
-  position: absolute;
-  top: 120px;
-  word-spacing: 2px;
+   margin-left: 45%;
+  top: -1100%;
   font-size: 1.3rem;
   font-weight: 500;
 }
@@ -683,6 +682,17 @@ img.team-img{
     height: max-content;
     padding-bottom: 10%;
   }
+  
+#testimonials .carousel-item p {
+  margin-left: 0;
+  position: absolute;
+  top: 10px;
+  font-size: x-small;
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 800;
+}
+
 }
 html,body{
   width:100%;
