@@ -11,7 +11,7 @@ import User from "./models/User.js";
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: "https://nayepankh-react-frontend.vercel.app/",
+  origin: "https://nayepankh-react-frontend.vercel.app",
   methods: ["POST", "GET"],
   credentials: true
 }));
