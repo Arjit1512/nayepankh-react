@@ -175,8 +175,8 @@ body {
   color:#fff;
   padding-bottom: 10px;
   font-weight: 800;
-  font-size: 45px;
   font-size: 4rem;
+  text-align: center;
   }
   
 
@@ -481,6 +481,7 @@ img.team-img{
 }
 .d1 img{
   padding-left: 2%;
+  width: 100%;
 }
 #donate1 .d2 h1{
   color: white;
@@ -654,14 +655,19 @@ img.team-img{
     height: max-content;
   }
 
-  html,body{
-    width:100%;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    overflow-x: hidden;
+  body{
+    overflow-x:hidden;
   }
-
+  #hero-start h2{
+    font-size: 3rem;
+  }
+  .donate2.right{
+    background-color: white;
+    padding-bottom: 10%;
+  }
+  .donate2.left{
+    background-color: white;
+  }
 }
 html,body{
   width:100%;
