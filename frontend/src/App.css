@@ -312,6 +312,7 @@ width:fit-content;
   margin-top: 5%;
 
 }
+
 #testimonials .carousel-item p{
    margin-left: 45%;
   top: -1100%;
@@ -546,6 +547,7 @@ img.team-img{
 .dropdown{
   visibility: hidden;
 }
+
 @media screen and (max-width: 1200px) {
   #part2 .left{
     width: 100%;
@@ -692,8 +694,27 @@ img.team-img{
   color: antiquewhite;
   font-weight: 800;
 }
-
 }
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  
+   #testimonials .carousel-item img{
+    width: 40%;
+    height: 40%;
+    border-radius: 70%;
+    margin-left: 20%;
+    margin-top: 5%;
+    z-index: -1;
+  } 
+  
+   #testimonials .carousel-item p{
+   font-size: large;
+   font-weight: 400;
+   } 
+ 
+}
+
+
 html,body{
   width:100%;
   height:100%;
