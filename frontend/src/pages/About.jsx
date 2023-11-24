@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import logo from "../sources/LOGO.jpg";
 import about2 from "../sources/about2.jpg"
 import grp from "../sources/grp.webp";
+import Modal from './Modal.jsx';
 import YourComponent from "./YourComponent.jsx"
 
 export const About = () => {
@@ -54,7 +55,11 @@ export const About = () => {
         <Link to={"../Donate.jsx"}><li>
           <a>Donate</a>
         </li></Link>
-          
+        
+        <Link to={"../Community.jsx"}><li>
+          <a>Community</a>
+        </li></Link>
+
         <Link to={"../"}><li>
           <a>Logout</a>
         </li></Link>
@@ -173,11 +178,13 @@ export const About = () => {
           <p>Office Address:104A/279 P.Road Kanpur</p>
           <p>Pincode: 208012</p>
           <div className="i">
-            <i className="social-icon fab fa-facebook-f" />
+            <i className="social-icon icon1 fab fa-facebook-f" />
             <i className="social-icon fab fa-twitter" />
             <i className="social-icon fab fa-instagram" />
             <i className="social-icon fas fa-envelope" />
           </div>
+          <div><Modal /></div>
+        
         </div>
         <div className="left">
           <img className="team-img" src={grp} alt="child" />

@@ -60,6 +60,12 @@ const YourComponent = () => {
           </a>
           </Link>
 
+          <Link to="../Community.jsx">
+          <a className="dropdown-item" onClick={handleItemClick}>
+            Community
+          </a>
+          </Link>
+
           <Link to="../">
           <a className="dropdown-item" onClick={handleItemClick}>
             Logout

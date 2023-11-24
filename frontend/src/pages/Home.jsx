@@ -3,16 +3,20 @@ import "../App.css"
 import grp from "../sources/grp.webp";
 import logo from "../sources/LOGO.jpg";
 import part2 from "../sources/part2.jpg";
-import car1 from "../sources/car1.jpg";
-import car2 from "../sources/car2.webp";
-import car3 from "../sources/car3.jpg";
 import ppl from "../sources/ppl.jpg";
 import aboutLink from "./About.jsx";
 import "./script.js"
 import { Link } from 'react-router-dom';
 import YourComponent from './YourComponent.jsx';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Testimonials from './Testimonials.jsx';
+import Modal from './Modal.jsx';
+import { useState } from 'react';
+
 const Home = () => {
-  
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <>
   <meta charSet="utf-8" />
@@ -61,6 +65,11 @@ const Home = () => {
         <Link to={"../Donate.jsx"}><li>
           <a>Donate</a>
         </li></Link>
+
+        <Link to={"../Community.jsx"}><li>
+          <a>Community</a>
+        </li></Link>
+
 
         <Link to={"../"}><li>
           <a>Logout</a>
@@ -136,7 +145,7 @@ const Home = () => {
       various other cities.
     </h4>
   </section>
-  <section className="colored-section" id="testimonials">
+  {/* <section className="colored-section" id="testimonials">
     <div id="testimonial-carousel" className="carousel slide" data-ride="false">
       <div className="carousel-inner">
         <div className="carousel-item active container-fluid">
@@ -198,7 +207,40 @@ const Home = () => {
         <span className="carousel-control-next-icon" />
       </a>
     </div>
-  </section>
+  </section> */}
+ 
+  {/* <section className="colored-section" id="testimonials">
+      <Carousel>
+        <Carousel.Item>
+          <img className="d-block w-100" src={car1} alt="First slide" />
+          <Carousel.Caption>
+            <p>
+              "NayePankh Foundation promotes the culture of kindness and wants to instill the sense of giving back to the society amongst modern youth.."
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={car2} alt="Second slide" />
+          <Carousel.Caption>
+            <p>
+              "NayePankh Foundation works with a vision to create a society where children can prosper to their complete potential and enjoy equality in its true essence."
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img className="d-block w-100" src={car3} alt="Third slide" />
+          <Carousel.Caption>
+            <p>
+              "NayePankh Foundation has been working since 2021 for under and less privileged people in the field of hunger, sanitary, health, education, awareness, and rights.."
+            </p>
+          </Carousel.Caption>
+        </Carousel.Item>
+      </Carousel>
+    </section> */}
+
+  <Testimonials />
+
+
   <section id="partt2">
     <div
       className="grid-container"
@@ -271,12 +313,14 @@ const Home = () => {
         <p>Office Address:104A/279 P.Road Kanpur</p>
         <p>Pincode: 208012</p>
         <div className="i">
-          <i className="social-icon fab fa-facebook-f" />
+          <i className="social-icon icon1 fab fa-facebook-f" />
           <i className="social-icon fab fa-twitter" />
           <i className="social-icon fab fa-instagram" />
           <i className="social-icon fas fa-envelope" />
         </div>
+      <div><Modal /></div>
       </div>
+      
       <div className="left">
         <img className="team-img" src={grp} alt="child" />
       </div>

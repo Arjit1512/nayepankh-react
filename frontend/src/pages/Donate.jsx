@@ -53,6 +53,10 @@ const Donate = () => {
         <Link to={"../Donate.jsx"}><li>
           <a className='active'>Donate</a>
         </li></Link>
+        
+        <Link to={"../Community.jsx"}><li>
+          <a>Community</a>
+        </li></Link>
 
         <Link to={"../"}><li>
           <a>Logout</a>

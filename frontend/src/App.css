@@ -89,6 +89,11 @@ body {
     left:0;
 }
 
+#header img {
+  width: 70%;
+  height: 70%;
+} 
+
 #navbar{
   display:flex;
   align-items: center;
@@ -139,7 +144,7 @@ body {
   left:20px;
 }
 #header img{
-    width:15%;
+    width:20%;
     height:15%;
 }
 
@@ -175,8 +180,8 @@ body {
   color:#fff;
   padding-bottom: 10px;
   font-weight: 800;
-  font-size: 45px;
   font-size: 4rem;
+  text-align: center;
   }
   
 
@@ -231,7 +236,7 @@ width:fit-content;
     width:100%;
     height:100%;
     margin-left:35%;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 #part2 .right{
     width:100%;
@@ -306,16 +311,16 @@ width:fit-content;
 
 #testimonials .carousel-item img{
   width: 20%;
-  height: 20%;
+  height: 10%;
   border-radius: 70%;
   margin-left: 20%;
   margin-top: 5%;
+
 }
+
 #testimonials .carousel-item p{
-  margin-left: 45%;
-  position: absolute;
-  top: 120px;
-  word-spacing: 2px;
+   margin-left: 45%;
+  top: -1100%;
   font-size: 1.3rem;
   font-weight: 500;
 }
@@ -475,12 +480,13 @@ img.team-img{
 
 /*DONATE PAGE*/
 #donate1{
-  height: 190vh;
+  height: max-content;
   width: 100%;
   background-color: #272121;
 }
 .d1 img{
   padding-left: 2%;
+  width: 100%;
 }
 #donate1 .d2 h1{
   color: white;
@@ -546,7 +552,28 @@ img.team-img{
 .dropdown{
   visibility: hidden;
 }
+
+.feedback{
+  background-color: red;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  margin-left: 20%;
+  border: 2px solid black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
+  #header img {
+    width: 60%;
+    height: 60%;
+  } 
+  
+#dropdownMenuButton{
+  position: relative;
+  margin-left: 180%;
+}
   #part2 .left{
     width: 100%;
   }
@@ -580,6 +607,7 @@ img.team-img{
     flex-direction: column-reverse;
     padding-bottom: 10%;
     padding-right: 30%;
+    padding-top: 30%;
   }
 
   #part2 .b2 {
@@ -654,15 +682,82 @@ img.team-img{
     height: max-content;
   }
 
-  html,body{
-    width:100%;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    overflow-x: hidden;
+  body{
+    overflow-x:hidden;
   }
-
+  #hero-start h2{
+    font-size: 3rem;
+  }
+  .donate2.right{
+    background-color: white;
+    padding-bottom: 10%;
+  }
+  .donate2.left{
+    background-color: white;
+  }
+  .ceo1 h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  #navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: absolute;
+    left: 10%;
+    top:0%;
+  }
+  #hero {
+    height: max-content;
+    padding-bottom: 10%;
+  }
+  
+#testimonials .carousel-item p {
+  margin-left: 0;
+  position: absolute;
+  top: 10px;
+  font-size: x-small;
+  text-align: center;
+  color: antiquewhite;
+  font-weight: 800;
 }
+#donate1 {
+  height: 335vh;
+}
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  #header img {
+    width: 20%;
+    height: 30%;
+  } 
+  
+  
+  #testimonials .carousel-item img{
+    width: 40%;
+    height: 40%;
+    border-radius: 70%;
+    margin-left: 20%;
+    margin-top: 5%;
+    z-index: -1;
+  } 
+  
+   #testimonials .carousel-item p{
+   font-size: large;
+   font-weight: 400;
+   } 
+   #dropdownMenuButton {
+    position: relative;
+    margin-left: 400%;
+}
+#part2{
+  padding-top: 0%;
+}
+#donate1 {
+  height: max-content;
+}
+}
+
+
 html,body{
   width:100%;
   height:100%;
@@ -790,6 +885,79 @@ html{
   justify-content: center;
 }
 
-html{
-  background-color: aquamarine;
+
+.fpart h5{
+  text-align: center;
+  margin-top: 5%;
+  color: #3C2A21;
 }
+.fpart p{
+  font-size: 0.8rem;
+  color: #483434;
+  text-align: left;
+  margin-left: 2%;
+}
+
+.fpart img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 25%;
+  padding: 3px;
+  margin-top: 5%;
+
+}
+
+.complete-test{
+  background-color: #F9FBE7;
+}
+
+.social-icon{
+  padding-left: 5%;
+  font-size: 1.8rem;
+}
+.icon1{
+  padding-left: 0%;
+}
+#cglines{
+    background-color: #CE5959;
+    padding: 2%;
+}
+.community-guidelines {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color:ivory;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.marginblack{
+  background-color: #000;
+  width:100%;
+  height: 2px;
+  opacity: 0.8;
+}
+.community-guidelines h2 {
+  color: #333;
+  font-weight: 800;
+  text-align: center;
+}
+
+.community-guidelines p {
+  color:#EEB76B;
+  line-height: 1.5;
+  text-align: center;
+  padding-top: 2%;
+  font-weight: 600;
+}
+
+.community-guidelines ul {
+  padding-left: 20px;
+  color: #000;
+  font-weight: 600;
+}
+
+.community-guidelines li {
+  margin-bottom: 10px;
+}
+

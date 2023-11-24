@@ -8,6 +8,7 @@ import Login from "../src/pages/Login.jsx";
 import Register from "../src/pages/Register.jsx";
 import Home from "./pages/Home";
 import Start from "../src/pages/start.jsx";
+import Community from "../src/pages/Community.jsx";
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="/Certificates.jsx" element={<Certificates />} />
           <Route path="/NR.jsx" element={<NR />} />
           <Route path="/Donate.jsx" element={<Donate />} />
+          <Route path="/Community.jsx" element={<Community />} />
           <Route path="/Login.jsx" element ={<Login />} />
           <Route path="/" element={<Start />} />
           <Route path = '/Register.jsx' element={<Register></Register>} ></Route>
