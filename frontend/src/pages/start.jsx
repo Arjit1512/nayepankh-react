@@ -264,7 +264,7 @@ const Home = () => {
         <p>Office Address:104A/279 P.Road Kanpur</p>
         <p>Pincode: 208012</p>
         <div className="i">
-          <i className="social-icon fab fa-facebook-f" />
+          <i style={{paddingLeft:"0"}} className="social-icon fab fa-facebook-f" />
           <i className="social-icon fab fa-twitter" />
           <i className="social-icon fab fa-instagram" />
           <i className="social-icon fas fa-envelope" />
