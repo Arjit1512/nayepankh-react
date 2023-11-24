@@ -9,13 +9,13 @@ function Login() {
 
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
-
+    axios.defaults.withCredentials = true;
     async function submit(e){
         e.preventDefault();
 
         try{
 
-            await axios.post("http://localhost:3001/auth/login",{
+            await axios.post("https://nayepankh-react-arjit.vercel.app/auth/login",{
                 email,password
             })
             .then(res=>{
