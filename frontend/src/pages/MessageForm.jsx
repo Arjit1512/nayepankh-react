@@ -81,15 +81,19 @@ const MessageForm = () => {
       <div className='output-msg'>
         <h2 className="messages-header">Reviews:</h2>
         {messages.map((msg, index) => (
-          <div key={index} className="message-item">
-            <div className='answer-box'>
-              <p>{msg.message}</p>
-              <h4>From: <i>{msg.name}</i></h4>
+          msg && msg.name && msg.message && (
+            <div key={index} className="message-item">
+              <div className='answer-box'>
+                <p>{msg.message}</p>
+                <h4>From: <i>{msg.name}</i></h4>
+              </div>
             </div>
-          </div>
+          )
         ))}
       </div>
     </div>
+
+
   );
 };
 
