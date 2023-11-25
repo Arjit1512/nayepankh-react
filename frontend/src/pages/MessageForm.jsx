@@ -18,7 +18,7 @@ const MessageForm = () => {
   // Load messages and report from localStorage on component mount
   useEffect(() => {
     const storedMessages = JSON.parse(localStorage.getItem('messages')) || [];
-    setMessages(storedMessages);
+    setMessages(prev => [...prev, storedMessages]);
   }, []);
 
   // Save messages and report to localStorage whenever the messages or report state changes
