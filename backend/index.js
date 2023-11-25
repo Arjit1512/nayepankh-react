@@ -10,11 +10,21 @@ import User from "./models/User.js";
 /* CONFIGURATIONS */
 dotenv.config();
 const app = express();
+// app.use(cors({
+//   origin: "https://nayepankh-react-frontend.vercel.app",
+//   methods: ["POST", "GET"],
+//   credentials: true
+// }));
+
+//app.use(cors());
 app.use(cors({
-  origin: "https://nayepankh-react-frontend.vercel.app",
-  methods: ["POST", "GET"],
-  credentials: true
+  origin: 'http://localhost:3000',
+  credentials: true,
 }));
+app.options('*', cors()); // Enable preflight for all routes
+
+
+
 app.use(express.json());
 
 // app.use((req, res, next) => {

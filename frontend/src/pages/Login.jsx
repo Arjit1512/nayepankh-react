@@ -15,7 +15,7 @@ function Login() {
 
         try{
 
-            await axios.post("https://nayepankh-react-arjit.vercel.app/auth/login",{
+            await axios.post("http://localhost:3001/auth/login",{//,"https://nayepankh-react-arjit.vercel.app/auth/login"],{
                 email,password
             })
             .then(res=>{
