@@ -30,7 +30,7 @@ const YourComponent = () => {
         </button>
         <div className={dropdownActive ? 'dropdown-menu show' : 'dropdown-menu'} aria-labelledby="dropdownMenuButton">
           
-          <Link to="../home">
+          <Link to="../home" >
           <a className="dropdown-item" onClick={handleItemClick}>
             Home
           </a>

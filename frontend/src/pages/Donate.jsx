@@ -5,6 +5,7 @@ import child from "../sources/child.png"
 import donate from "../sources/donate.png"
 import logo from "../sources/LOGO.jpg";
 import YourComponent from './YourComponent.jsx';
+import bot from "../sources/bot.jpeg";
 
 const Donate = () => {
   return (
@@ -34,31 +35,31 @@ const Donate = () => {
     <div className="navbar-collapse">
       <ul id="navbar">
        
-      <Link to={"../home"}><li>
+      <Link to={"../home"} style={{textDecoration:"none"}}><li>
           <a>Home</a>
         </li></Link>
 
-        <Link to={"../About.jsx"}><li>
+        <Link to={"../About.jsx"} style={{textDecoration:"none"}}><li>
           <a>About</a>
         </li></Link>
 
-        <Link to={"../Certificates.jsx"}><li>
+        <Link to={"../Certificates.jsx"} style={{textDecoration:"none"}}><li>
           <a>Certificates</a>
         </li></Link>
 
-        <Link to={"../NR.jsx"}><li>
+        <Link to={"../NR.jsx"} style={{textDecoration:"none"}}><li>
         <a><nobr>Newspaper-Recognition</nobr></a>
         </li></Link>
 
-        <Link to={"../Donate.jsx"}><li>
+        <Link to={"../Donate.jsx"} style={{textDecoration:"none"}}><li>
           <a className='active'>Donate</a>
         </li></Link>
         
-        <Link to={"../Community.jsx"}><li>
+        <Link to={"../Community.jsx"} style={{textDecoration:"none"}}><li>
           <a>Community</a>
         </li></Link>
 
-        <Link to={"../"}><li>
+        <Link to={"../"} style={{textDecoration:"none"}}><li>
           <a>Logout</a>
         </li></Link>
 
@@ -74,6 +75,14 @@ const Donate = () => {
     <div className="d1">
       <img src={donate} alt="d1.png" />
     </div>
+    <div class="bot-class">
+            <a href="https://mediafiles.botpress.cloud/d02ab71e-7631-48f9-bfd7-61cf69ad3307/webchat/bot.html" 
+            target="_blank" class="bot-button">
+              <img src={bot} class="bot-img" />
+              <br />HELLO,<br />I AM A BOT!
+            </a>
+          </div>
+         
     <div className="d2">
       <h1>
         "Together, Let's Make a<br />

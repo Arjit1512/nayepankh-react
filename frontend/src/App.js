@@ -9,6 +9,7 @@ import Register from "../src/pages/Register.jsx";
 import Home from "./pages/Home";
 import Start from "../src/pages/start.jsx";
 import Community from "../src/pages/Community.jsx";
+import WelcomeMessage from "./pages/WelcomeMessage.jsx";
 
 
 export default function App() {
@@ -25,7 +26,7 @@ export default function App() {
           <Route path="/Login.jsx" element ={<Login />} />
           <Route path="/" element={<Start />} />
           <Route path = '/Register.jsx' element={<Register></Register>} ></Route>
-          
+          <Route path="/WelcomeMessage.jsx" element={<WelcomeMessage />} />
     
       </Routes>
     </BrowserRouter>

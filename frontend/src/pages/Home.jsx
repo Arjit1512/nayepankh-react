@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Testimonials from './Testimonials.jsx';
 import Modal from './Modal.jsx';
 import { useState } from 'react';
+import bot from "../sources/bot.jpeg";
 
 const Home = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -46,32 +47,32 @@ const Home = () => {
     <div className="navbar-collapse">
       <ul id="navbar">
         
-        <Link to={"/home"}><li>
+        <Link to={"/home"} style={{textDecoration:"none"}}><li>
           <a className='active'>Home</a>
         </li></Link>
  
-        <Link to={"../About.jsx"}><li>
+        <Link to={"../About.jsx"} style={{textDecoration:"none"}}><li>
           <a>About</a>
         </li></Link>
 
-        <Link to={"../Certificates.jsx"}><li>
+        <Link to={"../Certificates.jsx"} style={{textDecoration:"none"}}><li>
           <a>Certificates</a>
         </li></Link>
 
-        <Link to={"../NR.jsx"}><li>
+        <Link to={"../NR.jsx"} style={{textDecoration:"none"}}><li>
           <a><nobr>Newspaper-Recognition</nobr></a>
         </li></Link>
 
-        <Link to={"../Donate.jsx"}><li>
+        <Link to={"../Donate.jsx"} style={{textDecoration:"none"}}><li>
           <a>Donate</a>
         </li></Link>
 
-        <Link to={"../Community.jsx"}><li>
+        <Link to={"../Community.jsx"} style={{textDecoration:"none"}}><li>
           <a>Community</a>
         </li></Link>
 
 
-        <Link to={"../"}><li>
+        <Link to={"../"} style={{textDecoration:"none"}}><li>
           <a>Logout</a>
         </li></Link>
 
@@ -97,6 +98,14 @@ const Home = () => {
       you can- Be it Money, Skill or Your Time
     </h4>
     <button>Donate Now</button>
+    <div class="bot-class">
+            <a href="https://mediafiles.botpress.cloud/d02ab71e-7631-48f9-bfd7-61cf69ad3307/webchat/bot.html" 
+            target="_blank" class="bot-button">
+              <img src={bot} class="bot-img" />
+              <br />HELLO,<br />I AM A BOT!
+            </a>
+          </div>
+         
   </section>
   <section id="partt2">
     <div className="grid-container" id="part2">

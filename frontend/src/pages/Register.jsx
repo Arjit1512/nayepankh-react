@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react"
 import axios from "axios"
 import { useNavigate, Link } from "react-router-dom"
 
-
 function Login() {
     const history = useNavigate();
 
@@ -14,7 +13,7 @@ function Login() {
         e.preventDefault();
 
         try {
-
+            
             await axios.post("https://nayepankh-react-arjit.vercel.app/auth/register",{//"https://nayepankh-react-arjit.vercel.app/auth/register", {
                 email, password
             })

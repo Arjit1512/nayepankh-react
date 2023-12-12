@@ -1,13 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
-
 import logo from "../sources/LOGO.jpg";
 import about2 from "../sources/about2.jpg"
 import grp from "../sources/grp.webp";
 import Modal from './Modal.jsx';
 import YourComponent from "./YourComponent.jsx"
-
+import bot from "../sources/bot.jpeg";
 export const About = () => {
   return (
     <>
@@ -78,6 +76,14 @@ export const About = () => {
         <h1>About Us</h1>
         <span style={{ fontSize: 180 }}>↓</span>
       </div>
+      <div class="bot-class">
+            <a href="https://mediafiles.botpress.cloud/d02ab71e-7631-48f9-bfd7-61cf69ad3307/webchat/bot.html" 
+            target="_blank" class="bot-button">
+              <img src={bot} class="bot-img" />
+              <br />HELLO,<br />I AM A BOT!
+            </a>
+          </div>
+         
     </section>
     <section id="partt2">
       <div className="grid-container" id="part2">

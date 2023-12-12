@@ -393,7 +393,7 @@ img.team-img{
 
 /*ABOUT PAGE*/
 #hero1{
-  background-image: url("sources/hero2.avif");
+  background-image: url("sources/OIP.jpg");
   align-items: center;
   color: #fff;
   background-size: cover;
@@ -569,7 +569,7 @@ img.team-img{
     width: 60%;
     height: 60%;
   } 
-  
+
 #dropdownMenuButton{
   position: relative;
   margin-left: 180%;
@@ -959,4 +959,68 @@ html{
 
 .community-guidelines li {
   margin-bottom: 10px;
+}
+
+#hero-start h3{
+  color: white;
+  font-weight: 800;
+  text-align: center;
+} 
+#hero-start p{
+  padding-top: 5%;
+  color: white;
+  font-size: large;
+  text-align: center;
+}
+
+.bot-button {
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+  font-size: 0.8rem;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  z-index: 100;
+  font-weight: 800;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.350);
+  text-decoration: none;
+  
+  &:hover {
+    box-shadow: 0 8px 16px #302c2c;
+    text-decoration: none;
+    text-decoration-color: none;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(52, 152, 219, 0.4);
+  }
+}
+.bot-img{
+  height:80px;
+  width:80px;
+
+}
+
+.bot-class {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: center;
+}
+
+.bot-button {
+  margin-top: 10px; 
+}
+
+.bot-img {
+  width: 60px; 
+  height:60px;
+  margin-bottom: 4%;
+  border-radius: 15%;
 }

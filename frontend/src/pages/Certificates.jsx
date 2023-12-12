@@ -8,6 +8,7 @@ import cert from "../sources/cert.png"
 import cert2 from "../sources/cert2.png"
 import YourComponent from "./YourComponent.jsx"
 import Modal from './Modal.jsx';
+import bot from "../sources/bot.jpeg";
 const Certificates = () => {
   return (
     <>
@@ -36,31 +37,31 @@ const Certificates = () => {
     <div className="navbar-collapse">
       <ul id="navbar">
         
-      <Link to={"../home"}><li>
+      <Link to={"../home"} style={{textDecoration:"none"}}><li>
           <a>Home</a>
         </li></Link>
 
-        <Link to={"../About.jsx"}><li>
+        <Link to={"../About.jsx"} style={{textDecoration:"none"}}><li>
           <a>About</a>
         </li></Link>
 
-        <Link to={"../Certificates.jsx"}><li>
+        <Link to={"../Certificates.jsx"} style={{textDecoration:"none"}}><li>
           <a className='active'>Certificates</a>
         </li></Link>
 
-        <Link to={"../NR.jsx"}><li>
+        <Link to={"../NR.jsx"} style={{textDecoration:"none"}}><li>
         <a><nobr>Newspaper-Recognition</nobr></a>
         </li></Link>
 
-        <Link to={"../Donate.jsx"}><li>
+        <Link to={"../Donate.jsx"} style={{textDecoration:"none"}}><li>
           <a>Donate</a>
         </li></Link>
         
-        <Link to={"../Community.jsx"}><li>
+        <Link to={"../Community.jsx"} style={{textDecoration:"none"}}><li>
           <a>Community</a>
         </li></Link>
 
-        <Link to={"../"}><li>
+        <Link to={"../"} style={{textDecoration:"none"}}><li>
           <a>Logout</a>
         </li></Link>
 
@@ -78,6 +79,14 @@ const Certificates = () => {
       <img src={cert} alt="cert.png" />
       <img src={cert2} className="cert2" alt="cert.png" />
     </div>
+    <div class="bot-class">
+            <a href="https://mediafiles.botpress.cloud/d02ab71e-7631-48f9-bfd7-61cf69ad3307/webchat/bot.html" 
+            target="_blank" class="bot-button">
+              <img src={bot} class="bot-img" />
+              <br />HELLO,<br />I AM A BOT!
+            </a>
+          </div>
+         
   </section>
   <section id="end">
     <div
