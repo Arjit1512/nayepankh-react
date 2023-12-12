@@ -20,7 +20,7 @@ const ContactForm = () => {
     e.preventDefault();
   
     try {
-      const response = await fetch('http://localhost:3001/submitForm', {
+      const response = await fetch('https://nayepankh-react-arjit.vercel.app/submitForm', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
